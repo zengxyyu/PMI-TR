@@ -20,7 +20,7 @@ python sort_of_clevr_generator.py
 ```
 sh pmi_sort.sh h_dim num_layers num_heads share_vanilla_parameters use_topk topk shared_memory_attention mem_slots use_long_men long_mem_segs long_mem_aggre use_wm_inference seed set_transformer
 ```
-**Description of parameter meaning:**
+**Explanation of Parameters:**
 
 `h_dim`: Embedding dimensions
 
