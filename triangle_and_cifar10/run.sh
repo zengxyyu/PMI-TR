@@ -36,7 +36,7 @@ name=$data-$model"-version-"$version"-num_layers-"$num_layers"-num_templates-"$n
 
 echo $name
 
-python run_cnn.py --model $model --data $data --version $version --num_layers $num_layers \
+python run.py --model $model --data $data --version $version --num_layers $num_layers \
         --num_templates $num_templates --dropout $dropout --epochs $epochs --patch_size $patch_size \
         --num_heads $num_heads --name $name --batch_size $batch_size --lr $lr \
 				--h_dim $h_dim --ffn_dim $ffn_dim --num_gru_schemas $num_gru_schemas \
@@ -47,4 +47,5 @@ python run_cnn.py --model $model --data $data --version $version --num_layers $n
 				--use_long_men $use_long_men --long_mem_segs $long_mem_segs --long_mem_aggre $long_mem_aggre \
 				--use_wm_inference $use_wm_inference --seed $seed
 
-#sh run_local.sh functional cifar10 1 12 3 0.1 200 4 4 128 0.0001
+# sh run.sh "cifar10" "default" 4 4 256 256 True True 5 True 8 True 5 True True 1
+
