@@ -41,6 +41,7 @@ parser.add_argument('--version', default=0, type=int, help='version for shared t
 parser.add_argument('--num_templates', default=12, type=int, help='num of templates for shared transformer')
 parser.add_argument('--num_heads', default=4, type=int, help='num of heads in Multi Head attention layer')
 # Triangle is 32   cifar10 is 4 or 8
+# zxy
 parser.add_argument('--patch_size', default=32, type=int, help='patch_size for transformer')
 parser.add_argument('--epochs', default=1000, type=int, help='num of epochs to train default=200')
 parser.add_argument('--lr', default=0.0002, type=float, help='learning rate')
